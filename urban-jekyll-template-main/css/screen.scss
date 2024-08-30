@@ -1,26 +1,50 @@
----
----
+/* Custom Styles for About Page */
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
 
-$pattern: "{{ site.baseurl }}/images/pattern.png";
-$screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
+#about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
 
-$brand-color: #FFA715;
-$html-background-color: #222;
-$secondary-brand-color: #FFC461;
-$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+#about img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-// Breakpoints
-$tablet: "(min-width: 450px)";
-$mid-point: "(min-width: 620px)";
-$desktop: "(min-width: 768px)";
+#about h1, #about h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
 
-$section-rotation: 5deg;
+#about p, #about li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
 
-@import "elements";
-@import "layout";
-@import "contact";
-@import "blog";
-@import "forms";
-@import "navigation";
-@import "footer";
-@import "cloudcannon";
+#about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+#about li:hover {
+    transform: scale(1.05);
+}
